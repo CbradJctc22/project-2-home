@@ -1,13 +1,14 @@
 body{
   margin: 0;
   padding: 0;
-
   background-image: linear-gradient(lightgray, #538371, #23525E);
   line-height: 1.5em;
   font-family: helvetica, sans-serif;
   text-align: center;
 }
-
+head{
+  background-color: lightgray;
+}
 
 nav{
   background: #23525E;
