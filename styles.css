@@ -4,7 +4,9 @@ body{
   background-image: linear-gradient(lightgray, #538371, #23525E);
   line-height: 1.5em;
   font-family: helvetica, sans-serif;
-  text-align: center;
+  color: white;
+  align-items: center;
+
 }
 head{
   background-color: lightgray;
@@ -15,15 +17,22 @@ nav{
   text-align: center;
   font-family: helvetica, sans-serif;
 }
+.logo{
+  max-width: 500px;
+}
+.center{
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
 
-a {
-  color: inherit;
 }
 
 nav a{
   padding: 1%;
   color: white;
-
   display: inline-block;
   text-decoration: none;
 }
@@ -37,16 +46,15 @@ h1{
 }
 
 h2{
-  font-size: 5em;
+  font-size: 2.5em;
   text-align: center;
-  background-color: lightgray;
-  padding: 10%;
+
+  padding: 3px;
   padding-left: 0;
   padding-right: 0;
-
   color:#23525E;
 }
-
+/* END OF STYLES FOR ALL PAGES */
 .hero img {
   width: 100%;
   background: url("hairproducts.jpg") no-repeat center fixed;
@@ -56,15 +64,14 @@ h2{
   background-position: center;
 }
 
-
-
 .flex-container {
-  width: 25%;
+  width: 75%;
   display: flex;
-  justify-content: center;
   flex-direction: column;
   align-items: center;
   background-color:#23525E;
+  padding-top: 20px;
+  padding-bottom: 20px;
   padding-left: 50px;
   padding-right: 50px;
   margin-left: auto;
@@ -73,19 +80,19 @@ h2{
   border color: #134B66;
   flex-wrap: wrap;
   color: white;
+
 }
 
 .flex-container div {
   text-align: center;
   line-height: 20px;
-
 }
 
 .group{
-  width: 50%;
+  width: 75%;
   display: flex;
   flex-direction: column;
-  text-align: center;
+  text-align: left;
   padding: 20px;
   margin-right: auto;
   margin-left: auto;
@@ -103,32 +110,126 @@ h2{
   align-items: center;
 }
 
+/* END OF STYLES FOR HOME */
 
+/* START OF STYLES FOR CONTACT */
 .info{
-  text-align: center;
+  float: left;
+  padding-top: 5px;
+  /* text-align: left; */
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  /* width: 80%; */
+  color: black;
+
+}
+
+.container{
+  float: right;
+  /* width: 80%; */
+  display: block;
+  background-color: #23525E;
+  margin: auto;
+  /* padding-left: 50px;
+  padding-right: 50px; */
+
+  padding: 10px 0 ;
+  max-width: 1000px;
+}
+
+.container p{
+  text-align: left;
+
+
+}
+
+.contact-form{
+  width: 80%;
+  margin: auto;
+
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  /* display: inline-block; */
+  text-align: left;
+  color: white;
+  box-sizing: border-box;
+}
+
+.contact-form input, .contact-form textarea{
+  display: block;
+  max-width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  font-size: 1.1em;
+  box-sizing: border-box;
+
+}
+
+.contact-form textarea{
+  width: 100%;
+}
+.contact-form input{
+  height: 28px;
+  padding-left: 10px;
+}
+
+.contact-form input[type="submit"]{
+  background-color: lightgray;
+  padding-top: 5px;
+  padding-bottom: 7px;
+  width: 150px;
+  
+  display: inline-block;
+  height: 2em;
+
+
+}
+.map {
+  text-align: left;
+  padding-left:80px;
+  color: white;
+  max-width: 100%;
+  box-sizing: border-box;
 
 }
 
 figcaption{
-  font-size: 2em;
+  padding: 10px;
+  font-size: 1.2em;
+  line-height: 1.0em;
 
 }
 
 footer{
   display: block;
-  flex-wrap: wrap;
+  text-align: center;
+
   background-color: lightgray;
-  padding: 0;
-  margin: 0;
-  color: #23525E;
+  padding: 30px 0;
+  line-height: 1em;
+
+  color:  #23525E;
+
+  margin: auto;
 
 }
 
+.footer img{
+  display: inline-block;
 
+}
 
-@media screen and (min-width: 700px) {
+div img{
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 400px) {
       p{
-        width: 90%;
+        width: 80%;
         margin: auto;
       }
 
