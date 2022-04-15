@@ -1,12 +1,10 @@
 body{
   margin: 0;
-  padding: 0;
+  /* padding: ; */
   background-image: linear-gradient(lightgray, #538371, #23525E);
   line-height: 1.5em;
   font-family: helvetica, sans-serif;
-  color: white;
-  align-items: center;
-
+  text-align: center;
 }
 head{
   background-color: lightgray;
@@ -17,22 +15,15 @@ nav{
   text-align: center;
   font-family: helvetica, sans-serif;
 }
-.logo{
-  max-width: 500px;
-}
-.center{
-  width: 80%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 5px;
-  padding-bottom: 5px;
 
+a {
+  color: inherit;
 }
 
 nav a{
   padding: 1%;
   color: white;
+
   display: inline-block;
   text-decoration: none;
 }
@@ -43,53 +34,68 @@ nav a:hover{
 h1{
   font-size: 4em;
   text-align: center;
+  color: white;
 }
 
 h2{
-  font-size: 2.5em;
+  font-size: 4em;
   text-align: center;
-
-  padding: 3px;
+  background-color: lightgray;
+  padding: 30px;
   padding-left: 0;
   padding-right: 0;
+
   color:#23525E;
 }
-/* END OF STYLES FOR ALL PAGES */
-.hero img {
-  width: 100%;
-  background: url("hairproducts.jpg") no-repeat center fixed;
-  background-repeat: no-repeat;
 
-  background-size: cover;
-  background-position: center;
+.logo{
+  max-width: 500px;
 }
+
+.center{
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+}
+
+.hero{
+  width: 100%;
+  background: url("products.jpg") center fixed;
+  background-size: cover;
+
+}
+
+
 
 .flex-container {
   width: 75%;
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
   background-color:#23525E;
   padding-top: 20px;
-  padding-bottom: 20px;
   padding-left: 50px;
   padding-right: 50px;
   margin-left: auto;
   margin-right: auto;
-  border: solid;
-  border color: #134B66;
+
   flex-wrap: wrap;
   color: white;
-
 }
 
-.flex-container div {
+/* .flex-container div {
   text-align: center;
   line-height: 20px;
-}
+
+} */
 
 .group{
-  width: 75%;
+  width: 300px;
   display: flex;
   flex-direction: column;
   text-align: left;
@@ -101,7 +107,7 @@ h2{
 }
 
 .group img{
-  min-width: 50%;
+  width: 300px;;
   display: flex;
   padding: 20px;
   margin-left: auto;
@@ -110,36 +116,28 @@ h2{
   align-items: center;
 }
 
-/* END OF STYLES FOR HOME */
 
-/* START OF STYLES FOR CONTACT */
 .info{
-  float: left;
+  width: 80%;
+  text-align: left;
   padding-top: 5px;
-  /* text-align: left; */
   padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 20px;
-  /* width: 80%; */
+
+  padding: 20px 0;
+
   color: black;
 
 }
 
-.container{
-  float: right;
-  /* width: 80%; */
-  display: block;
-  background-color: #23525E;
-  margin: auto;
-  /* padding-left: 50px;
-  padding-right: 50px; */
-
-  padding: 10px 0 ;
-  max-width: 1000px;
-}
-
 .container p{
+  width: 80%;
   text-align: left;
+  display: block;
+  margin: auto;
+  padding-left: 20px;
+
+  padding: 20px 0;
+  max-width: 1000px;
 
 
 }
@@ -147,19 +145,20 @@ h2{
 .contact-form{
   width: 80%;
   margin: auto;
+  background-color: #23525E;
+  padding: 30px 0;
+  padding-left: 20px;
 
-  padding-top: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 5px;
   /* display: inline-block; */
   text-align: left;
   color: white;
-  box-sizing: border-box;
+
 }
 
 .contact-form input, .contact-form textarea{
   display: block;
+  padding-left: 10px;
+  padding-right: 10px;
   max-width: 100%;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -170,11 +169,11 @@ h2{
 }
 
 .contact-form textarea{
-  width: 100%;
+  width: 80%;
 }
 .contact-form input{
   height: 28px;
-  padding-left: 10px;
+  padding-left: 8px;
 }
 
 .contact-form input[type="submit"]{
@@ -182,61 +181,48 @@ h2{
   padding-top: 5px;
   padding-bottom: 7px;
   width: 150px;
-  
+
   display: inline-block;
   height: 2em;
 
 
 }
-.map {
-  text-align: left;
-  padding-left:80px;
-  color: white;
-  max-width: 100%;
-  box-sizing: border-box;
-
-}
 
 figcaption{
-  padding: 10px;
-  font-size: 1.2em;
-  line-height: 1.0em;
+  font-size: 1.5em;
 
 }
 
 footer{
+  width: 100%;
   display: block;
-  text-align: center;
-
+  flex-wrap: wrap;
   background-color: lightgray;
-  padding: 30px 0;
-  line-height: 1em;
-
-  color:  #23525E;
-
-  margin: auto;
+  padding: 20px 0;
+  margin: 0;
+  color: #23525E;
 
 }
 
-.footer img{
-  display: inline-block;
 
-}
-
-div img{
-  box-sizing: border-box;
-}
 
 @media screen and (min-width: 400px) {
-      p{
-        width: 80%;
+      .info{
+        width: 90%;
         margin: auto;
+
+      }
+      .hero{
+        width: 100%;
+
+
       }
 
 }
 
 @media screen and (min-width: 1300px) {
         .hero{
+
 
         }
 
