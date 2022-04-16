@@ -16,8 +16,10 @@ nav{
   font-family: helvetica, sans-serif;
 }
 
-a {
-  color: inherit;
+footer p{
+  display: inline-block;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 nav a{
@@ -63,11 +65,29 @@ h2{
 }
 
 .hero{
-  width: 100%;
-  background: url("products.jpg") center fixed;
-  background-size: cover;
+  height: 50%;
+  max-width: 100%;
+  background-image: url("products.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
 
 }
+
+.hero-text{
+  text-align: center;
+  position: absolute;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  font-weight: bold;
+  color: purple;
+  top: 70%;
+  left:20%;
+  transform: translate(-10%);
+
+}
+
 
 
 
@@ -123,21 +143,36 @@ h2{
   padding-top: 5px;
   padding-left: 20px;
 
-  padding: 20px 0;
+  padding: 10px 0;
 
   color: black;
 
 }
 
-.container p{
-  width: 80%;
+.float{
+  float: left;
   text-align: left;
-  display: block;
-  margin: auto;
   padding-left: 20px;
-
-  padding: 20px 0;
+  width: 80%;
+  padding-left: 20px;
+  display: inline-block;
+  margin: auto;
   max-width: 1000px;
+  padding-bottom: 20px;
+}
+
+p{
+  text-align: left;
+  padding-left: 30px;
+}
+.span img{
+  max-width: 300px;
+  padding-bottom: 20px;
+}
+
+.container {
+  width: 80%;
+
 
 
 }
@@ -205,25 +240,28 @@ footer{
 }
 
 
+/*  FOR MOBILE DEVICES */
+@media screen and (min-width: 700px) {
 
-@media screen and (min-width: 400px) {
       .info{
         width: 90%;
         margin: auto;
 
       }
-      .hero{
-        width: 100%;
+      /* .hero{
+        width: 400px;
+        height:40vh;
 
 
-      }
+
+      } */
 
 }
-
+/* FOR DESKTOP */
 @media screen and (min-width: 1300px) {
-        .hero{
+        /* .hero{
+          height: 120vh;
 
-
-        }
+        } */
 
 }
