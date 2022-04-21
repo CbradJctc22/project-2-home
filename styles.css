@@ -10,6 +10,10 @@ head{
   background-color: lightgray;
 }
 
+img{
+  max-width:100%;
+}
+
 nav{
   background: #23525E;
   text-align: center;
@@ -40,7 +44,7 @@ h1{
 }
 
 h2{
-  font-size: 3em;
+  font-size: 4em;
   text-align: center;
   background-color: lightgray;
   padding: 30px;
@@ -51,8 +55,7 @@ h2{
 }
 
 .logo{
-  max-width: 300px;
-  padding: 5px;
+  max-width: 500px;
 }
 
 .center{
@@ -66,15 +69,15 @@ h2{
 }
 
 .hero-image{
-  /* width: 60vw; */
   height: 50vh;
+  max-width: 100%;
   background-image: url("products.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  justify-content: center;
-  opacity: 70%;
-
+  background-position: center;
+  filter: invert(80%);
   position: relative;
+
 
 }
 
@@ -84,9 +87,9 @@ h2{
   font-size: 1.5em;
   line-height: 1.5em;
   font-weight: bold;
-  color: #216574;
-  top: 50%;
-  left: 15%;
+  color: white;
+  top: 40%;
+  left: 10%;
   transform: translate(-10%);
   display: inline-block;
 
@@ -94,25 +97,26 @@ h2{
 
 .button{
   font: helvetica, sans-serif;
-  border: none;
   background-color: #216574;
   cursor: pointer;
   color: white;
   float: right;
+  transition: 0.3s;
   margin-top: 60%;
   margin-right: 10%;
-  padding: 10px;
+  padding: 10px 25px;
   text-align: center;
-  text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 17px;
   border-radius: 10px;
-  box-shadow: 0 5px #999;
+  box-shadow: 5 5px gray;
   }
 
 .button:hover{
-  background-color: #3e8e41}
-}
+  background-color: #3e8e41;
+  opacity: 0.2}
+
+
 
 .button:active {
   background-color: #3e8e41;
@@ -147,22 +151,24 @@ h2{
 
 } */
 
-.group{
-  width: 300px;
+.group {
+  /* width: 300px;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; */
   text-align: left;
-  padding: 20px;
+  /* padding: 20px; */
   margin-right: auto;
   margin-left: auto;
   color: white;
-  align-items: center;
+  /* align-items: center; */
 }
 
-.group img{
-  width: 300px;;
-  display: flex;
-  padding: 20px;
+.group div{
+  width: 300px;
+  /* display: flex; */
+  flex-basis: 300px;
+  flex-grow: 1;
+  padding: 10px;
   margin-left: auto;
   margin-right: auto;
   flex-direction: column;
@@ -175,9 +181,7 @@ h2{
   text-align: left;
   padding-top: 5px;
   padding-left: 20px;
-
   padding: 10px 0;
-
   color: black;
 
 }
@@ -196,7 +200,7 @@ h2{
 
 p{
   text-align: left;
-  padding-left: 30px;
+  padding-left: 20px;
 }
 .span img{
   max-width: 300px;
@@ -205,8 +209,6 @@ p{
 
 .container {
   width: 80%;
-
-
 
 }
 
@@ -275,19 +277,22 @@ footer{
 
 /*  FOR MOBILE DEVICES */
 @media screen and (min-width: 700px) {
-
+    .group{
+      display: flex;
+      flex-basis: 300px;
+    }
       .info{
         width: 90%;
         margin: auto;
 
       }
-      .hero{
+      /* .hero{
         width: 400px;
         height:40vh;
 
 
 
-      }
+      } */
 
 }
 /* FOR DESKTOP */
