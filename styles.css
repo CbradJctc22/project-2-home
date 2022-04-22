@@ -41,6 +41,7 @@ h1{
   font-size: 5em;
   text-align: center;
   color: white;
+
 }
 
 h2{
@@ -53,8 +54,8 @@ h2{
 }
 
 h3{
-  font-size: 2em;
-  line-height: 1.2em;
+  font-size: 1.2em;
+  line-height: 1em;
   text-align: left;
   padding-left: 20px;
   background-color: lightgray;
@@ -69,10 +70,12 @@ h3{
 .center{
   width: 80%;
   display: block;
+  flex-direction: column;
   margin-left: auto;
   margin-right: auto;
   padding-top: 5px;
   padding-bottom: 5px;
+
 
 }
 
@@ -96,7 +99,7 @@ h3{
   bottom: 20%;
   left: auto;
   right: auto;
-  font-size: 5em;
+  font-size: 4.4em;
   line-height: 1.5em;
   font-weight: 800;
   color: #DB8E7E;
@@ -113,9 +116,9 @@ h3{
   cursor: pointer;
   color: white;
   position: absolute;
-  bottom: 20px;
+  bottom: 60px;
   transition: 0.3s;
-  margin-top: 60%;
+  /* margin-top: 50%; */
   right: 10%;
   padding: 10px 25px;
   text-align: center;
@@ -156,29 +159,34 @@ h3{
   background-color: #216574;
   padding: 10px;
   /* margin-left: 50px; */
-  margin: 40px;
+  margin: auto;
   justify-content: center;
 
 }
 
 .grid-container3 {
-  max-width: 100%;
+  width: 90%;
   display: grid;
   grid-template-columns: auto auto;
-  grid-gap: 50px;
-  /* background-color: #216574; */
-  padding: 10px;
+  /* grid-gap: 80px; */
+  background-color: #216574;
+  padding: 10px 0;
   /* margin-left: 50px; */
-  margin: 40px;
+  margin: auto;
   justify-content: center;
 
+}
+
+ol{
+  width: 90%;
+  padding: 1px;
 }
 
 .grid-item {
   background-color: white;
   border: 5px solid #216574;
   padding: 10px;
-  font-size: 1.5em;
+  font-size: 1.2em;
   text-align: center;
 
 }
@@ -188,52 +196,21 @@ h3{
   /* border: 5px solid #216574; */
 
   padding: 10px;
-  font-size: 1.5em;
-  text-align: center;
-  color: white;
-
-}
-
-/* .flex-container {
-  width: 75%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  background-color:#23525E;
-  padding-top: 20px;
-  padding-left: 50px;
-  padding-right: 50px;
-  margin-left: auto;
-  margin-right: auto;
-
-  flex-wrap: wrap;
-  color: white;
-} */
-
-/* .flex-container div {
-  text-align: center;
-  line-height: 20px;
-
-} */
-
-.group {
-  width: 95%;
-  display: flex;
-  flex-direction: column;
+  font-size: 1.2em;
   text-align: left;
-  /* padding: 20px; */
-  margin-right: auto;
-  margin-left: auto;
-  color: black;
-  /* align-items: center; */
+  color: white;
+
 }
+
+
+
+
 .group1 {
-  width: 95%;
+  width: 80%;
   display: flex;
   flex-direction: column; */
   text-align: left;
-  /* padding: 20px; */
+  padding: 5px;
   margin-right: auto;
   margin-left: auto;
   color: black;
@@ -292,13 +269,10 @@ p{
   padding-bottom: 20px;
 } */
 
-.container {
-  width: 80%;
 
-}
 
 .contact-form{
-  width: 100%;
+  width: 90%;
   margin: auto;
   background-color: lightgray;
   padding: 10px 0;
@@ -314,7 +288,7 @@ p{
   display: block;
   padding-left: 10px;
   padding-right: 10px;
-  max-width: 100%;
+  max-width: 90%;
   margin-top: 10px;
   margin-bottom: 10px;
   border-radius: 3px;
@@ -338,7 +312,7 @@ p{
   width: 150px;
 
   display: inline-block;
-  height: 2em;
+  height: 1.5em;
 
 
 }
@@ -354,19 +328,19 @@ footer{
   display: inline-block;
   flex-wrap: wrap;
   background-color: lightgray;
-  padding: 10px 0;
-  margin: 0;
+  padding: 8px 0;
+  margin: auto;
   color: #23525E;
 
 }
 
 
-/*  FOR MOBILE DEVICES */
+
 @media screen and (min-width: 700px) {
     .group{
       display: flex;
       flex-basis: 300px;
-      flex-direction: column;
+      flex-direction: row;
     }
       .info{
         width: 90%;
@@ -377,11 +351,9 @@ footer{
         width: 400px;
         height:40vh;
 
-
-
       } */
       .contact-form{
-        width: 100%;
+        max-width: 100%;
         /* float: left; */
       }
 
@@ -390,6 +362,11 @@ footer{
       }
 
       .grid-container2{
+        width: 70%;
+        margin: auto;
+      }
+
+      .grid-container3{
         width: 70%;
         margin: auto;
       }
