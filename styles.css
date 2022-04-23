@@ -391,6 +391,9 @@ iframe{
   margin:auto;
 }
 
+.float-left{
+  float: left;
+}
 
 
 @media screen and (min-width: 700px) {
@@ -435,6 +438,15 @@ iframe{
         max-width: 40%;
         float: right;
       }
+
+    .float{
+      float: left;
+      width: 50%;
+    }
+
+    .float-left{
+      float: left;
+    }
 
 }
 /* FOR DESKTOP */
